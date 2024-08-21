@@ -1,0 +1,2536 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <link rel="stylesheet" href="./BS/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #212529;
+            height: 100px;
+        }
+
+        .carousel-item {
+            margin-top: 4%;
+            margin-bottom: 10%;
+            height: 400px;
+            background-color: #212529;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 10%;
+        }
+
+        .carousel-item img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .card {
+            height: 100%;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            border-bottom: 12px;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.927);
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btn-primary {
+            margin-top: auto;
+        }
+
+        a {
+            width: 100px;
+        }
+
+        footer {
+            background-color: #212529;
+            height: 12px;
+        }
+
+        .col-4 {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 641px) and (max-width: 1024px) {
+            .col-4 {
+                width: 50%;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .col-4 {
+                width: 33%;
+            }
+        }
+
+    </style>
+    <title>Armas Russas</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-bg-dark">Armas Russas</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img src="https://s2.glbimg.com/SpNvyMcwEPWB8cptILp5qrkjZjU=/620x400/e.glbimg.com/og/ed/f/original/2013/12/23/mikhail_kalashnikov.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Mikhail Kalashnikov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://i1.wp.com/cont.ws/uploads/pic/2019/7/WZO_NeuHbRY.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Vasily Degtyaryov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://nportal.novosti.rs/data/images/2022-05-31/31180_svd-1_orig.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Yevgeny Dragunov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://pbs.twimg.com/media/E1-y9sxWUAANXml.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Nikolay Makarov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://kalashnikov.club/uploads/i/f6b/wedsp1x9an2t9hhz1q68qfqpx4qcj37l/gennadiy_nikonov_ne_tolko_abakan_kalashnikov_klub.png" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Gennadiy Nikonov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Regnum_picture_1483303736175662_small.jpg/220px-Regnum_picture_1483303736175662_small.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Sergey Gavrilovich Simonov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://d4guns.s3.us-west-1.amazonaws.com/wp-content/uploads/2021/04/12215524/Fedor-Tokarev-768x505.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Fedor Tokarev</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://en.mercopress.com/data/cache/noticias/63399/0x0/viktr.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Victor Kalashnikov</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://topwar.ru/uploads/posts/2016-07/1467597945_sudaev.png" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Alexey Ivanovich Sudayev</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img src="https://vnn-imgs-f.vgcloud.vn/2020/12/11/11/tim-hieu-khau-sung-truong-tu-dong-dau-tien-tren-the-gioi-3.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h2>Vladimir Grigoryevich Fyodorov</h2>
+                </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="9"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Mosin-Nagant M1891</h4>
+                    </div>
+                    <img src="https://preview.redd.it/first-gun-appreciation-post-mosin-nagant-91-30-v0-e28z6akmzmca1.jpg?width=640&crop=smart&auto=webp&s=83672e8ee786bc5be63b249850057e4d77b107ab" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Império Russo <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7cLZHWGifQj76rcMKGgmmU2c9NplAZIIIA&s" height="15px" alt=""> <br>
+                            Criador: Sergei Mosin, Léon Nagant<br>
+                            Fabricante: Tula Arms Plant, Izhevsk Mechanical Plant<br>
+                            Método de ação: Repetição por ferrolho<br>
+                            Modos de tiro: Repetição<br>
+                            Cadência: ~10-15 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 5 tiros (clip)<br>
+                            Comprimento padrão: 1.232 mm<br>
+                            Comprimento do cano: 800 mm<br>
+                            Peso: 4,0 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1891</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Nagant M1895</h4>
+                    </div>
+                    <img src="https://www.gunboards.com/attachments/nagant-m1895-1-jpg.3811480/" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Revólver <br>
+                            Local de criação: Império Russo <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7cLZHWGifQj76rcMKGgmmU2c9NplAZIIIA&s" height="15px" alt=""> <br>
+                            Criador: Léon Nagant <br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Ação dupla<br>
+                            Modos de tiro: Tiro único (ação dupla ou simples)<br>
+                            Cadência: ~14-21 rpm<br>
+                            Munição padrão: 7,62x38mmR<br>
+                            Quantidade de munição: 7 tiros (tambor)<br>
+                            Comprimento padrão: 235 mm<br>
+                            Comprimento do cano: 114 mm<br>
+                            Peso: 0,75 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1895</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Obrez</h4>
+                    </div>
+                    <img src="https://images.guns.com/wordpress/2013/07/obrez4-cover.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-Rifle<br>
+                            Local de criação: Império Russo <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7cLZHWGifQj76rcMKGgmmU2c9NplAZIIIA&s" height="15px" alt=""><br>
+                            Criador: N/A (armas feitas artesanalmente)<br>
+                            Fabricante: N/A (feitas a partir de Mosin Nagant)<br>
+                            Método de ação: Ação manual (repetição)<br>
+                            Modos de tiro: Repetição<br>
+                            Cadência: 10-15 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 5 tiros (clip)<br>
+                            Comprimento padrão: Variável (normalmente 500-700 mm)<br>
+                            Comprimento do cano: Variável (normalmente 200-300 mm)<br>
+                            Peso: Aproximadamente 2,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1914</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Fedorov Avtomat</h4>
+                    </div>
+                    <img src="https://topwar.ru/uploads/posts/2015-12/1449712931_fedorov2.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de batalha <br>
+                            Local de criação: Império Russo <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL7cLZHWGifQj76rcMKGgmmU2c9NplAZIIIA&s" height="15px" alt=""><br>
+                            Criador: Vladimir Fedorov<br>
+                            Fabricante: Kovrov Arms Factory<br>
+                            Método de ação: Operação a gás, ferrolho oscilante<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 350-400 rpm (automático)<br>
+                            Munição padrão: 6,5x50mm Arisaka<br>
+                            Quantidade de munição: 25 tiros (pente)<br>
+                            Comprimento padrão: 1.045 mm<br>
+                            Comprimento do cano: 520 mm<br>
+                            Peso: 4,4 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1916</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>DP-27</h4>
+                    </div>
+                    <img src="https://sallyantiques.co.uk/wp-content/uploads/2022/05/New-Spec-Deactivated-Russian-Degtyaryov-DP-27-Light-Machine-Gun-1-scaled.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Metralhadora leve <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Vasily Degtyaryov<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 500-600 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 47 tiros (tambor)<br>
+                            Comprimento padrão: 1.270 mm<br>
+                            Comprimento do cano: 605 mm<br>
+                            Peso: 8,4 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1927</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>TT Tokarev</h4>
+                    </div>
+                    <img src="https://sdi.edu/wp-content/uploads/2021/01/Tokarev-2.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Fedor Tokarev<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Tiro único (ação simples)<br>
+                            Cadência: 850 rpm<br>
+                            Munição padrão: 7,62x25mm Tokarev<br>
+                            Quantidade de munição: 8 tiros (pente)<br>
+                            Comprimento padrão: 196 mm<br>
+                            Comprimento do cano: 116 mm<br>
+                            Peso: 0,845 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1930</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SVT-38</h4>
+                    </div>
+                    <img src="https://cdn.kalashnikovgroup.ru/static/images/7/8/6/78625a1dc134be4a0b1c0b58effe7077-17138-720.png" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Fedor Tokarev <br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Operação por gás <br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30-40 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 1226 mm<br>
+                            Comprimento do cano: 625 mm<br>
+                            Peso: 4,3 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1938</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SVT-40</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_ar_svt40_p01.jpg/--/img/ws/fa_ar_svt40_p01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Fedor Tokarev<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30-40 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 1.226 mm<br>
+                            Comprimento do cano: 625 mm<br>
+                            Peso: 3,85 kg
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1940</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PPD-40</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/PPD-34-38_SMG.JPG" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Vasily Degtyaryov<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 800-1.000 rpm<br>
+                            Munição padrão: 7,62x25mm Tokarev<br>
+                            Quantidade de munição: 71 tiros (tambor)<br>
+                            Comprimento padrão: 788 mm<br>
+                            Comprimento do cano: 273 mm<br>
+                            Peso: 3,63 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1940</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PPSh-41</h4>
+                    </div>
+                    <img src="https://i.redd.it/9ffqbwi9kida1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora<br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Georgy Shpagin<br>
+                            Fabricante: Vários<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 900-1.000 rpm<br>
+                            Munição padrão: 7,62x25mm Tokarev<br>
+                            Quantidade de munição: 71 tiros (tambor), 35 tiros (pente)<br>
+                            Comprimento padrão: 843 mm<br>
+                            Comprimento do cano: 269 mm<br>
+                            Peso: 3,63 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1941</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PTRD-41</h4>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHhEzSHUJMkaBfpm2CB5NiIeq6xy4hxBnyLA&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle anti-material <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Vasily Degtyaryov<br>
+                            Fabricante: Fábricas diversas na URSS <br>
+                            Método de ação: Ação de ferrolho<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: ~8-10 rpm<br>
+                            Munição padrão: 14,5×114mm<br>
+                            Quantidade de munição: 1 tiro (solto)<br>
+                            Comprimento padrão: 2.020 mm<br>
+                            Comprimento do cano: 1.350 mm<br>
+                            Peso: 17,3 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1941</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PTRS-41</h4>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROi8xlH95dkv92s2VKyiYG6tLdlaygRDhRgozg9ZBcYE_CdGHV4xsc8vE&s=10" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle anti-material <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Sergei Simonov<br>
+                            Fabricante: Fábricas diversas na URSS <br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~10-15 rpm<br>
+                            Munição padrão: 14,5×114mm<br>
+                            Quantidade de munição: 5 tiros (clip)<br>
+                            Comprimento padrão: 2.100 mm<br>
+                            Comprimento do cano: 1.220 mm<br>
+                            Peso: 20,9 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1941</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PPS-43</h4>
+                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNIsL7qhLQZdyZ9HXA8UzYK_Rojn87KwPOZQ&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Alexey Sudayev<br>
+                            Fabricante: Fábricas diversas na URSS <br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 600-700 rpm<br>
+                            Munição padrão: 7,62x25mm Tokarev<br>
+                            Quantidade de munição: 35 tiros (pente)<br>
+                            Comprimento padrão: 820 mm<br>
+                            Comprimento do cano: 269 mm<br>
+                            Peso: 3,04 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1943</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AS-44</h4>
+                    </div>
+                    <img src="https://www.imfdb.org/images/thumb/3/34/Sudayev_AS-44_Model_3.jpg/450px-Sudayev_AS-44_Model_3.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Alexei Sudayev<br>
+                            Fabricante: Vários<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 1.037 mm<br>
+                            Comprimento do cano: 495 mm<br>
+                            Peso: 5,6 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1944</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPD</h4>
+                    </div>
+                    <img src="https://modernfirearms.net/userfiles/images/machine/mg14/rpd2.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Metralhadora leve <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Vasily Degtyaryov<br>
+                            Fabricante: Fábricas diversas na URSS <br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 650 rpm<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 100 tiros (cinto)<br>
+                            Comprimento padrão: 1.037 mm<br>
+                            Comprimento do cano: 520 mm<br>
+                            Peso: 7,4 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1944</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SKS</h4>
+                    </div>
+                    <img src="https://assets.basspro.com/image/upload/c_limit,dpr_2.0,f_auto,h_250,q_auto,w_400/c_limit,h_250,w_400/v1/ProductImages/450/usedgun_101321668_main?pgw=1" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Sergei Simonov<br>
+                            Fabricante: Tula Arms Plant, Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~35-40 rpm<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 10 tiros (clip)<br>
+                            Comprimento padrão: 1.021 mm<br>
+                            Comprimento do cano: 520 mm<br>
+                            Peso: 3,85 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1945</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-47</h4>
+                    </div>
+                    <img src="https://super.abril.com.br/wp-content/uploads/2018/07/55de0cc80e21632c150004afthinkstockphotos-98325010.jpeg?&w=720&crop=1" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 880 mm <br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 4,3 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1947</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Makarov PM</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Makarov_%2828034065%29.jpeg/1200px-Makarov_%2828034065%29.jpeg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Nikolay Makarov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Tiro único (ação simples e dupla)<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 8 tiros (pente)<br>
+                            Comprimento padrão: 161 mm<br>
+                            Comprimento do cano: 93,5 mm<br>
+                            Peso: 0,73 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1949</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Stechkin APS</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Stechkin_APS.jpg/1200px-Stechkin_APS.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-metralhadora <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Igor Stechkin<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 750-800 rpm (automático)<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 20 tiros (pente)<br>
+                            Comprimento padrão: 225 mm<br>
+                            Comprimento do cano: 140 mm<br>
+                            Peso: 1,22 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1951</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>LPO-50</h4>
+                    </div>
+                    <img src="https://sallyantiques.co.uk/wp-content/uploads/2021/12/Cold-War-Era-Deactivated-LPO-50-Flame-Thrower-1-1024x498.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-chamas <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: NPO Bazalt<br>
+                            Fabricante: NPO Bazalt<br>
+                            Método de ação: Propulsão a jato<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Combustível líquido inflamável<br>
+                            Quantidade de munição: 3 tanques (aproximadamente 10 segundos de fogo)<br>
+                            Comprimento padrão: 1.300 mm<br>
+                            Peso: 22 kg (com tanque cheio)<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1953</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPG-7</h4>
+                    </div>
+                    <img src="https://www.thearmorylife.com/wp-content/uploads/2022/10/privately-owned-rpg-7.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-foguetes <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: GRAU<br>
+                            Fabricante: Bazalt<br>
+                            Método de ação: Ação manual (lançamento)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Granada propelida por foguete de 40 mm<br>
+                            Quantidade de munição: 1 granada<br>
+                            Comprimento padrão: 950 mm<br>
+                            Comprimento do cano: N/A<br>
+                            Peso: 7 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1961</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AKM</h4>
+                    </div>
+                    <img src="https://www.militaryimages.net/media/east-german-akm-clone.2252/full" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 880 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,1 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1959</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPK</h4>
+                    </div>
+                    <img src="https://i.redd.it/jvlx4exsn7kb1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Arma automática de esquadrão <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 40 tiros (pente)<br>
+                            Comprimento padrão: 1.040 mm<br>
+                            Comprimento do cano: 590 mm<br>
+                            Peso: 4,8 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1961</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SVD Dragunov</h4>
+                    </div>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3Fw9Un2NTaNiwRPGS7L7vfUBgn3nTupCg7HdE2PGMqM8thB5__jpbOu6Sr2ViKufFsa_gSnjog1OCWw5VXNaTw9DG0grb4vQJZiLa3cUXb4A4yrug9cw9yFa5hgCQ38sMnD4-OVPIFlM/w1200-h630-p-k-no-nu/DRAGUNOV+12.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Yevgeny Dragunov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: 30 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 1.225 mm<br>
+                            Comprimento do cano: 620 mm<br>
+                            Peso: 4,3 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1963</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>TOZ-34</h4>
+                    </div>
+                    <img src="https://img.halooglasi.com/slike/oglasi/Thumbs/231215/l/toz-34-5425643986857-71806624383.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Espingarda <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Tula Arms Plant<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Ação manual (break-action)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Cartucho calibre 12<br>
+                            Quantidade de munição: 2 tiros<br>
+                            Comprimento padrão: 1.140 mm<br>
+                            Comprimento do cano: 750 mm<br>
+                            Peso: 3,2 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1964</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Makarov PB</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/PB_pistol_%28542-26%29.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Nikolay Makarov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Tiro único (ação simples e dupla)<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 8 tiros (pente)<br>
+                            Comprimento padrão: 310 mm <br>
+                            Comprimento do cano: 105 mm<br>
+                            Peso: 0,98 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1967</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PKM</h4>
+                    </div>
+                    <img src="https://nationalinterest.org/sites/default/files/main_images/PKM_machine_gun_in_storage%20%281%29.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Metralhadora leve <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Fábricas diversas na URSS <br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Automático<br>
+                            Cadência: 650-750 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 100-250 tiros (cinto)<br>
+                            Comprimento padrão: 1.176 mm<br>
+                            Comprimento do cano: 658 mm<br>
+                            Peso: 7,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1969</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SPP-1M</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/%D0%9F%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82_%D0%A1%D0%9F%D0%9F-1%D0%9C_-_%D0%A6%D0%9D%D0%98%D0%98%D0%A2%D0%9E%D0%A7%D0%9C%D0%90%D0%A8_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Ação manual (break-action)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 4,5x40mm MPS (para uso subaquático)<br>
+                            Quantidade de munição: 4 tiros (clipe)<br>
+                            Comprimento padrão: 244 mm<br>
+                            Comprimento do cano: 195 mm<br>
+                            Peso: 950 g (sem munição)<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1971</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>OTs-02 Kiparis</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/%D0%9F%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82-%D0%BF%D1%83%D0%BB%D0%B5%D0%BC%D0%B5%D1%82_%D0%9E%D0%A6-02_%D0%9A%D0%B8%D0%BF%D0%B0%D1%80%D0%B8%D1%81_-_%D0%A2%D1%83%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%9C%D1%83%D0%B7%D0%B5%D1%8F_%D0%9E%D1%80%D1%83%D0%B6%D0%B8%D1%8F_2008_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Instituto de Pesquisa Central de Construção de Máquinas de Precisão <br>
+                            Fabricante: Instituto de Pesquisa Central de Construção de Máquinas de Precisão<br>
+                            Método de ação: Blowback <br>
+                            Modos de tiro: Tiro único e totalmente automático<br>
+                            Cadência: 850 rpm<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 20 ou 30 tiros<br>
+                            Comprimento padrão: 370 mm<br>
+                            Comprimento do cano: 156 mm<br>
+                            Peso: 1,6 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1972</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-74</h4>
+                    </div>
+                    <img src="https://i.ytimg.com/vi/LcUQgiaq69M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD9vpLAOPmRfIOsdBHnxGAJiAuJ5w" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 650-700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 940 mm <br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,47 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1974</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPK-74</h4>
+                    </div>
+                    <img src="https://www.swatmag.com/app/uploads/swat/2017/12/LG-3.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Arma de esquadrão automática <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 45 tiros (pente), 75 tiros (tambor)<br>
+                            Comprimento padrão: 1.045 mm<br>
+                            Comprimento do cano: 590 mm<br>
+                            Peso: 4,7 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1974</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>9K34 Strela-3</h4>
+                    </div>
+                    <img src="https://armyrecognition.com/images/stories/east_europe/russia/weapons/sa-14/pictures/SA-14_Gremlin_9K34_Strela-3_manpads_portable_air-defense_missile_system_Russia_Russian_army_defence_industry_005.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Sistema de mísseis terra-ar portátil <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: KBM (Kolomna Mechanical Engineering Design Bureau)<br>
+                            Fabricante: KBM<br>
+                            Método de ação: Guiado por infravermelho<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Míssil 9M36<br>
+                            Alcance efetivo: 4.500 m<br>
+                            Comprimento padrão: 1.482 mm<br>
+                            Peso: 10,3 kg (lançador completo)<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1974</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AKS-74U</h4>
+                    </div>
+                    <img src="https://i.pinimg.com/736x/fa/99/93/fa9993b1cfee892e90d81e0be209181f.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Arma de defesa pessoal <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 650-700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 730 mm <br>
+                            Comprimento do cano: 206,5 mm<br>
+                            Peso: 2,7 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1979</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AEK-971</h4>
+                    </div>
+                    <img src="https://img2.safereactor.cc/pics/post/%D0%BE%D1%80%D1%83%D0%B6%D0%B8%D0%B5-%D0%90%D0%95%D0%9A-971-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-3441278.jpeg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Kovrov Mechanical Plant<br>
+                            Fabricante: Kovrov Mechanical Plant<br>
+                            Método de ação: Operação a gás com pistão balanceado<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~900 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 960 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,8 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1980</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RGS-50</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/50-%D0%BC%D0%BC_%D1%80%D1%83%D1%87%D0%BD%D0%BE%D0%B9_%D0%B3%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B5%D1%82_%D0%A0%D0%93%D0%A1-50%D0%9C_-_%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8_%D0%B2_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B8-2010_01.jpg/800px-50-%D0%BC%D0%BC_%D1%80%D1%83%D1%87%D0%BD%D0%BE%D0%B9_%D0%B3%D1%80%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BC%D0%B5%D1%82_%D0%A0%D0%93%D0%A1-50%D0%9C_-_%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8_%D0%B2_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B8-2010_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-granadas <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Tula Arms Plant<br>
+                            Fabricante: Tula Arms Plant<br>
+                            Método de ação: Ação manual<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Granada de 50mm<br>
+                            Quantidade de munição: 1 tiro<br>
+                            Comprimento padrão: 730 mm<br>
+                            Comprimento do cano: 340 mm<br>
+                            Peso: 4,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1980</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>KS-23</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/%D0%9A%D0%B0%D1%80%D0%B0%D0%B1%D0%B8%D0%BD_%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%9A%D0%A1-23%D0%9C_%D0%94%D1%80%D0%BE%D0%B7%D0%B4%2C_%D0%B2%D0%B8%D0%B4_%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_%D0%B1%D0%B5%D0%B7_%D0%BF%D1%80%D0%B8%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Espingarda <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Ação manual (pump-action)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Cartucho calibre 23×75mmR<br>
+                            Quantidade de munição: 3 tiros (tubo)<br>
+                            Comprimento padrão: 650 mm<br>
+                            Comprimento do cano: 350 mm<br>
+                            Peso: 3,85 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1981</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PSS Pistol</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/%D0%9F%D0%B8%D1%81%D1%82%D0%BE%D0%BB%D0%B5%D1%82_%D1%81%D0%B0%D0%BC%D0%BE%D0%B7%D0%B0%D1%80%D1%8F%D0%B4%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%2C_6%D0%9F28_%D0%9F%D0%A1%D0%A1_%D0%92%D1%83%D0%BB_-_%D0%9E%D0%A1%D0%9D_%D0%A1%D0%B0%D1%82%D1%80%D1%83%D0%BD_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 7,62x42mm SP-4<br>
+                            Quantidade de munição: 6 tiros (pente)<br>
+                            Comprimento padrão: 170 mm<br>
+                            Comprimento do cano: 70 mm<br>
+                            Peso: 0,85 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1983</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>TP-82</h4>
+                    </div>
+                    <img src="https://www.saladearmas.com/uploads/images/2022/02/toz-tp-82-a-primeira-pistola-projetada-para-viajar-ao-espaco-abbfe.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-espingarda <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: Izhevsk Mechanical Plant<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Ação manual (break-action)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Cartucho calibre 12, 5,45x39mm (rifle), 12,5mm (foguete de sinalização)<br>
+                            Quantidade de munição: 3 tiros (duas espingardas, um rifle)<br>
+                            Comprimento padrão: 360 mm <br>
+                            Comprimento do cano: 270 mm<br>
+                            Peso: 2,4 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1986</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPO-A Shmel</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/RPO-A_missile_and_launcher.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-foguetes <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: NPO Bazalt<br>
+                            Fabricante: NPO Bazalt<br>
+                            Método de ação: Propulsão de foguete<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 93 mm termobárica<br>
+                            Quantidade de munição: 1 tiro<br>
+                            Comprimento padrão: 920 mm<br>
+                            Peso: 11 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1986</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AS Val</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/AS_Val_-_RaceofHeroes-part2-24.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600-700 rpm (automático)<br>
+                            Munição padrão: 9x39mm<br>
+                            Quantidade de munição: 20 tiros (pente)<br>
+                            Comprimento padrão: 875 mm<br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 2,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1987</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>VSS Vintorez</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_sr_vss_v1.jpg/--/img/ws/fa_sr_vss_v1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 800 rpm (automático)<br>
+                            Munição padrão: 9x39mm SP5<br>
+                            Quantidade de munição: 10-20 tiros (pente)<br>
+                            Comprimento padrão: 894 mm<br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 2,6 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1987</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>KS-23K</h4>
+                    </div>
+                    <img src="https://preview.redd.it/ow7q5fbm8mo61.jpg?width=640&crop=smart&auto=webp&s=ee44c8e9078b5825240379f1300ad62c7ab119de" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Espingarda <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Semi-automático<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Cartucho calibre 23×75mmR<br>
+                            Quantidade de munição: 7 tiros (pente)<br>
+                            Comprimento padrão: 750 mm<br>
+                            Comprimento do cano: 450 mm<br>
+                            Peso: 4,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1990</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>DP-64</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/%D0%94%D0%9F-64_-_%D0%9C%D0%92%D0%9C%D0%A1_2007.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-granadas <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Ação manual<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 45mm VGM-93<br>
+                            Quantidade de munição: 1 tiro<br>
+                            Comprimento padrão: 820 mm<br>
+                            Peso: 10 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1990</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-90</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Interpolitex_2013_%28536-6%29.jpg/1200px-Interpolitex_2013_%28536-6%29.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Instituto de Pesquisa de Instrumentos de Precisão <br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Blowback <br>
+                            Modos de tiro: Tiro único e totalmente automático<br>
+                            Cadência: 600 rpm<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 30 tiros<br>
+                            Comprimento padrão: 508 mm<br>
+                            Comprimento do cano: 230 mm<br>
+                            Peso: 1,83 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1990</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>MP-412 REX</h4>
+                    </div>
+                    <img src="https://preview.redd.it/mp-412-rex-not-being-in-the-game-already-is-a-crime-v0-rdz7tllqp6db1.jpg?width=1080&crop=smart&auto=webp&s=dd902f6580117c68a7bca3e6d982686d4c30353c" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Revólver <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Izhevsk Mechanical Plant <br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Ação dupla<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: Depende do atirador<br>
+                            Munição padrão: .357 Magnum<br>
+                            Quantidade de munição: 6 tiros<br>
+                            Comprimento padrão: 235 mm<br>
+                            Comprimento do cano: 114 mm<br>
+                            Peso: 1,1 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1990</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-74M</h4>
+                    </div>
+                    <img src="https://c4.wallpaperflare.com/wallpaper/77/61/291/weapons-machine-kalashnikov-ak-74-wallpaper-preview.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: URSS <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/255px-Flag_of_the_Soviet_Union.svg.png" height="13px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhevsk Mechanical Plant<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 650-700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 943 mm <br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,4 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1991</time>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Dragunov SVU</h4>
+                    </div>
+                    <img src="https://preview.redd.it/1dhh8ljv8ln81.png?auto=webp&s=d9473c1ca216a62b0be3dd0be293a22e34d4cac8" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 870 mm<br>
+                            Comprimento do cano: 520 mm<br>
+                            Peso: 4,4 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1991</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Groza-1 OTs-14</h4>
+                    </div>
+                    <img src="https://www.imfdb.org/images/thumb/6/6b/OTs-14-1A-01.jpg/400px-OTs-14-1A-01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Carabina automática <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 750 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 720 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1992</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Groza-4 OTs-14</h4>
+                    </div>
+                    <img src="https://i.redd.it/xv0f3hmswix11.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Carabina automática <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 700 rpm (automático)<br>
+                            Munição padrão: 9x39mm (SP-6)<br>
+                            Quantidade de munição: 20 tiros (pente)<br>
+                            Comprimento padrão: 610 mm<br>
+                            Comprimento do cano: 240 mm mm<br>
+                            Peso: 3,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1992</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPK-74M</h4>
+                    </div>
+                    <img src="https://2.bp.blogspot.com/-93KtjqGEDzc/TWUZ2nEGTiI/AAAAAAAAARQ/Melwpf-DFLw/s1600/rpk-74_1_of_4.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Arma de esquadrão automático <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Mikhail Kalashnikov<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 45 tiros (pente)<br>
+                            Comprimento padrão: 1.060 mm<br>
+                            Comprimento do cano: 590 mm<br>
+                            Peso: 4,7 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1993</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-91 Kedr</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_smg_kedr_p01.jpg/--/img/ws/fa_smg_kedr_p01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-metralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~800 rpm (automático)<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 20 ou 30 tiros (pente)<br>
+                            Comprimento padrão: 540 mm<br>
+                            Comprimento do cano: 120 mm<br>
+                            Peso: 1,57 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SR-3</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/c-640-400/n-fa_smg_sr3m_p03.jpg/--/img/ws/fa_smg_sr3m_p03.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Carabina automática <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~900 rpm (automático)<br>
+                            Munição padrão: 9x39mm<br>
+                            Quantidade de munição: 20 ou 30 tiros (pente)<br>
+                            Comprimento padrão: 640 mm<br>
+                            Comprimento do cano: 156 mm<br>
+                            Peso: 2,2 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>OSV-96</h4>
+                    </div>
+                    <img src="https://mil.in.ua/wp-content/uploads/2024/01/OSV-96-obl.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle anti-material <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsKIB SOO<br>
+                            Fabricante: TsKIB SOO<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: 10-12 rpm<br>
+                            Munição padrão: 12,7x108mm<br>
+                            Quantidade de munição: 5 tiros (pente)<br>
+                            Comprimento padrão: 1.740 mm<br>
+                            Comprimento do cano: 1.000 mm<br>
+                            Peso: 12,9 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-101</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/AK-101_assault_rifle_at_Engineering_Technologies_2012.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 5,56x45mm NATO<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 943 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,4 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-102</h4>
+                    </div>
+                    <img src="https://img.goodfon.com/original/1920x1080/b/18/ak-102-ak-ak-102-weapon-assault-rifle-avtomat-kalashnikova-a.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Carabina automática <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 5,56x45mm NATO<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 824 mm<br>
+                            Comprimento do cano: 314 mm<br>
+                            Peso: 3,2 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>          
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-103</h4>
+                    </div>
+                    <img src="https://quwa.org/wp-content/uploads/2016/06/AK-103-WIkipedia-1.png" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 943 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,6 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-104</h4>
+                    </div>
+                    <img src="https://cdn11.bigcommerce.com/s-qusp5279wl/images/stencil/1200x1800/products/132/544/10708670_288825051316868_4428055459913524288_o_e2d0a6c7-934d-42eb-83b3-4a715a91c65c__27384.1548801285.jpg?c=2" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 824 mm<br>
+                            Comprimento do cano: 314 mm<br>
+                            Peso: 3,2 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RGM-40</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Images_rpkmn.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-granadas <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsKIB SOO<br>
+                            Fabricante: TsKIB SOO<br>
+                            Método de ação: Ação manual<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 40mm VOG-25<br>
+                            Quantidade de munição: 1 tiro<br>
+                            Comprimento padrão: 680 mm<br>
+                            Comprimento do cano: 300 mm<br>
+                            Peso: 2,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RG-6</h4>
+                    </div>
+                    <img src="https://i.pinimg.com/736x/c5/32/9b/c5329bda8161c916d2f8a061e8676bbc.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Lança-granadas <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsKIB SOO<br>
+                            Fabricante: TsKIB SOO<br>
+                            Método de ação: Ação manual<br>
+                            Modos de tiro: Tiro único (ação repetida)<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 40mm VOG-25<br>
+                            Quantidade de munição: 6 tiros (tambor)<br>
+                            Comprimento padrão: 680 mm<br>
+                            Peso: 6,2 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>VSK-94</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_smg_9a91_v2.jpg/--/img/ws/fa_smg_9a91_v2.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de atirador designado <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: KBP Instrument Design Bureau <br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Operação por gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: 700 rpm<br>
+                            Munição padrão: 9x39mm<br>
+                            Quantidade de munição: 10 ou 20 tiros<br>
+                            Comprimento padrão: 932 mm<br>
+                            Comprimento do cano: 230 mm<br>
+                            Peso: 2,8 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1994</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Dragunov SVD-S</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_sr_svds_p02.jpg/--/img/ws/fa_sr_svds_p02.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: NPO Izhmash<br>
+                            Fabricante: NPO Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30 rpm<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 1.130 mm <br>
+                            Comprimento do cano: 565 mm<br>
+                            Peso: 5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1995</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-90M1</h4>
+                    </div>
+                    <img src="https://lh3.googleusercontent.com/proxy/-tjwVOAJAsAQiecsFvLYMqcsdQQC4XbtbmkV-wMAnnyxh9uPOAXBamqGENZLBLTfk6uSmO5AcB5dstSvds3QyHE6oYQRQYWp-xQ4zrM" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: KBP Instrument Design Bureau<br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600-700 rpm (automático)<br>
+                            Munição padrão: 9x19mm Parabellum<br>
+                            Quantidade de munição: 64 tiros (pente de tambor) ou 32 tiros (pente comum)<br>
+                            Comprimento padrão: 400 mm <br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 1,85 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1995</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-19 Bizon</h4>
+                    </div>
+                    <img src="https://kalashnikov.club/uploads/m/142/142cb3dd7f6e87c1719a83ae0ecaa434.JPG" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Victor Kalashnikov<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600-700 rpm (automático)<br>
+                            Munição padrão: 9x18mm Makarov<br>
+                            Quantidade de munição: 64 tiros (pente helicoidal)<br>
+                            Comprimento padrão: 690 mm <br>
+                            Comprimento do cano: 195 mm<br>
+                            Peso: 2,1 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1996</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AN-94</h4>
+                    </div>
+                    <img src="https://img.goodfon.com/wallpaper/big/0/d0/an-94-abakan-avtomat-an-94.webp" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Gennadiy Nikonov<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600 rpm (automático), 1800 rpm (rajada de 2 tiros)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 943 mm<br>
+                            Comprimento do cano: 405 mm<br>
+                            Peso: 3,85 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1997</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Saiga-12</h4>
+                    </div>
+                    <img src="https://i.ytimg.com/vi/tL7KpdD0bSA/maxresdefault.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Espingarda <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 12-gauge<br>
+                            Quantidade de munição: 2-10 tiros (pente)<br>
+                            Comprimento padrão: Variável<br>
+                            Comprimento do cano: Variável<br>
+                            Peso: 3,6 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1997</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Saiga-12 SBS</h4>
+                    </div>
+                    <img src="https://i.ytimg.com/vi/kLovVj7k6LM/mqdefault.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-espingarda <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Cartucho calibre 12<br>
+                            Quantidade de munição: 5, 8, 10 ou 20 tiros (pente)<br>
+                            Comprimento padrão:  675 mm<br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 3,2 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1997</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>KSVK 12.7</h4>
+                    </div>
+                    <img src="https://i.namu.wiki/i/2_0716izL_bTbqvB2wTwOKGAOZA-1YUlPGakp4jAfTvVtXdyivI3CvfGTLYjs8e7e0PA8UtrzslJCFMRNF-HxA.webp" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle anti-material <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: KBP Instrument Design Bureau<br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Recuo longo do cano<br>
+                            Modos de tiro: Monotiro<br>
+                            Calibre: 12,7×108mm<br>
+                            Capacidade do carregador: 5 tiros<br>
+                            Comprimento total: 1.400 mm <br>
+                            Comprimento do cano: 1.000 mm<br>
+                            Peso: 12 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1997</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SV-98</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_sr_sv98_p01.jpg/--/img/ws/fa_sr_sv98_p01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Izhevsk Mechanical Plant <br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Ferrolho <br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: Depende do atirador<br>
+                            Munição padrão: 7,62x54mmR<br>
+                            Quantidade de munição: 10 tiros<br>
+                            Comprimento padrão: 1200 mm<br>
+                            Comprimento do cano: 650 mm<br>
+                            Peso: 5,8 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1998</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SR-2 Veresk</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_smg_sr2_o1.jpg/--/img/ws/fa_smg_sr2_o1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-metralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~900 rpm (automático)<br>
+                            Munição padrão: 9x21mm Gyurza<br>
+                            Quantidade de munição: 20 ou 30 tiros (pente)<br>
+                            Comprimento padrão: 603 mm<br>
+                            Comprimento do cano: 174 mm<br>
+                            Peso: 1,65 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">1999</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>GSh-18</h4>
+                    </div>
+                    <img src="https://www.glockforum.com/attachments/image-880645485-jpg.48767/" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: KBP Instrument Design Bureau<br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 9x19mm Parabellum<br>
+                            Quantidade de munição: 18 tiros (pente)<br>
+                            Comprimento padrão: 180 mm<br>
+                            Comprimento do cano: 103 mm<br>
+                            Peso: 0,59 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2000</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-2000</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/n-fa_smg_pp2000_o1.jpg/--/img/ws/fa_smg_pp2000_o1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola-metralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: KBP Instrument Design Bureau<br>
+                            Fabricante: KBP Instrument Design Bureau<br>
+                            Método de ação: Blowback<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600-800 rpm (automático)<br>
+                            Munição padrão: 9x19mm Parabellum<br>
+                            Quantidade de munição: 20, 30 tiros (pente)<br>
+                            Comprimento padrão: 582 mm <br>
+                            Comprimento do cano: 180 mm<br>
+                            Peso: 1,4 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2001</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>VKS</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/VKS_sniper_rifle_at_Engineering_Technologies_2012.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: TsKIB SOO<br>
+                            Fabricante: TsKIB SOO<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Ação manual (repetição)<br>
+                            Cadência: ~20-30 rpm<br>
+                            Munição padrão: 12,7x55mm STs-130<br>
+                            Quantidade de munição: 5 tiros (pente)<br>
+                            Comprimento padrão: 1.125 mm<br>
+                            Comprimento do cano: 450 mm<br>
+                            Peso: 6,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2002</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Vepr-12</h4>
+                    </div>
+                    <img src="https://files.osgnetworks.tv/12/files/2011/11/01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Espingarda <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Molot-Oruzhiye Ltd.<br>
+                            Fabricante: Molot-Oruzhiye Ltd.<br>
+                            Método de ação: Operação a gás<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30-40 rpm<br>
+                            Munição padrão: Cartucho calibre 12<br>
+                            Quantidade de munição: 5, 8, 10, 12 tiros (pente)<br>
+                            Comprimento padrão: 1.135 mm<br>
+                            Comprimento do cano: 570 mm<br>
+                            Peso: 4,3 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2003</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-107</h4>
+                    </div>
+                    <img src="https://cdn-live.warthunder.com/uploads/bb/c3/13/be1a522734aa1d25f863f8d36a43502cbd/tsniitochmash18.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás com pistão balanceado<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~850 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 940 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,8 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2004</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-19-01 Vityaz</h4>
+                    </div>
+                    <img src="https://i.pinimg.com/736x/70/05/4b/70054bcf3c8c6a9bd29c875efd887cd1.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Submetralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Kalashnikov Concern <br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Blowback <br>
+                            Modos de tiro: Tiro único e totalmente automático<br>
+                            Cadência: 700-750 rpm<br>
+                            Munição padrão: 9x19mm Parabellum<br>
+                            Quantidade de munição: 30 tiros<br>
+                            Comprimento padrão: 705 mm<br>
+                            Comprimento do cano: 237 mm<br>
+                            Peso: 2,9 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2004</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>SVDK</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/%D0%A1%D0%BD%D0%B0%D0%B9%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D0%B8%D0%BD%D1%82%D0%BE%D0%B2%D0%BA%D0%B0_%D0%A1%D0%92%D0%94%D0%9A_-_%D0%A6%D0%9D%D0%98%D0%98%D0%A2%D0%9E%D0%A7%D0%9C%D0%90%D0%A8_02.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: NPO Izhmash<br>
+                            Fabricante: NPO Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático<br>
+                            Cadência: ~30 rpm<br>
+                            Munição padrão: 9,3x64mm Brenneke<br>
+                            Quantidade de munição: 10 tiros (pente)<br>
+                            Comprimento padrão: 1.250 mm<br>
+                            Comprimento do cano: 620 mm<br>
+                            Peso: 6,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2005</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>PP-71</h4>
+                    </div>
+                    <img src="https://cdn-fastly.thefirearmblog.com/media/2024/05/16/14224897/forgotten-soviet-pp-71-smg-designed-by-dragunov.jpg?size=720x845&nocrop=1" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Pistola metralhadora <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Arsenal Firearms<br>
+                            Fabricante: Arsenal Firearms<br>
+                            Método de ação: Blowback, operado por culatra<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~700 rpm (automático)<br>
+                            Munição padrão: 9x19mm Parabellum<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 300 mm<br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 2 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2009</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-9</h4>
+                    </div>
+                    <img src="https://tvd.im/uploads/posts/2022/06/izhmash-ak-9_3.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Carabina automática <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Izhmash<br>
+                            Fabricante: Izhmash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 9x39mm<br>
+                            Quantidade de munição: 20 tiros (pente)<br>
+                            Comprimento padrão: 874 mm<br>
+                            Comprimento do cano: 200 mm<br>
+                            Peso: 3,8 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2009</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RSh-12</h4>
+                    </div>
+                    <img src="https://preview.redd.it/in-light-of-the-newest-video-i-give-you-the-insane-russian-v0-luo0ovr3t8nb1.png?auto=webp&s=1117f57017ed2c267196681316d38287f152bf8e" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Revólver <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsKIB SOO<br>
+                            Fabricante: TsKIB SOO<br>
+                            Método de ação: Ação simples e dupla<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: 12,7x55mm STs-130<br>
+                            Quantidade de munição: 5 tiros (tambor)<br>
+                            Comprimento padrão: 330 mm<br>
+                            Comprimento do cano: 140 mm<br>
+                            Peso: 2,2 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2011</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>Orsis T-5000</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/ORSIS_T-5000_.308Win_Sniping_competition_for_The_Armourers_Day_01.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de precisão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Orsis<br>
+                            Fabricante: Orsis<br>
+                            Método de ação: Ação manual (bolt-action)<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Várias opções (incluindo .308 Winchester, .300 Winchester Magnum, .338 Lapua Magnum)<br>
+                            Quantidade de munição: 5-10 tiros (pente)<br>
+                            Comprimento padrão: 1.200 mm<br>
+                            Comprimento do cano: 680 mm<br>
+                            Peso: 6,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2011</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-12</h4>
+                    </div>
+                    <img src="https://cdn-defesaaereanaval.nuneshost.com/wp-content/uploads/2013/04/Nova-Kalashnikov.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov Concern<br>
+                            Fabricante: Mikhail Kalashnikov Concern<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático, Rajada de 2 tiros<br>
+                            Cadência: 700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm, 7,62x39mm (alternativo)<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 880 mm <br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2012</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>ADS Amphibious Rifle</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/5.45mm_ADS_rifle_-_InnovationDay2013part1-44.jpg/1200px-5.45mm_ADS_rifle_-_InnovationDay2013part1-44.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: TsNIITochMash<br>
+                            Fabricante: TsNIITochMash<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 600-700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm (para uso terrestre), 5,45x39mm PSP (para uso subaquático)<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 660 mm (coronha dobrada)<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 4,6 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2013</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>9K333 Verba</h4>
+                    </div>
+                    <img src="https://photo.weaponsystems.net/image/s-carousel/c-640-400/n-ad_manpads_verba_p04.jpg/--/img/ws/ad_manpads_verba_p04.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Sistema de mísseis terra-ar portátil <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: KBM (Kolomna Mechanical Engineering Design Bureau)<br>
+                            Fabricante: KBM<br>
+                            Método de ação: Guiado por infravermelho<br>
+                            Modos de tiro: Tiro único<br>
+                            Cadência: N/A<br>
+                            Munição padrão: Míssil 9M336<br>
+                            Alcance efetivo: 6.000 m<br>
+                            Comprimento padrão: 1.670 mm<br>
+                            Peso: 17,25 kg (lançador completo)<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2014</time>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-15</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/AK-15_Assault_Rifle_Army-2022_2022-08-20_2385.jpg/1200px-AK-15_Assault_Rifle_Army-2022_2022-08-20_2385.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Kalashnikov Concern<br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x39mm<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 880 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2015</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>RPK-16</h4>
+                    </div>
+                    <img src="https://rostec.ru/upload/iblock/2a3/2a3e5d314019d96d5a4a51d92bdc02eb.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Arma automática de esquadrão <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""> <br>
+                            Criador: Mikhail Kalashnikov Concern<br>
+                            Fabricante: Mikhail Kalashnikov Concern<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: 700 rpm (automático)<br>
+                            Munição padrão: 5,45x39mm<br>
+                            Quantidade de munição: 95 tiros (tambor), 30 tiros (pente)<br>
+                            Comprimento padrão: 1.076 mm <br>
+                            Comprimento do cano: 370 mm<br>
+                            Peso: 4,5 kg<br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2016</time>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-308</h4>
+                    </div>
+                    <img src="https://cdn.kalashnikovgroup.ru/static/images/1/9/2/1920kh1080-ak-308-modernizirovannyy-01-21607-1080.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de batalha <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Kalashnikov Concern<br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 7,62x51mm NATO<br>
+                            Quantidade de munição: 20 tiros (pente)<br>
+                            Comprimento padrão: 880 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 4,3 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2018</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h4>AK-19</h4>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/AK-19_Assault_Rifle_Army-2022_2022-08-20_2386.jpg" alt="">
+                    <div class="card-body">
+                        <p>
+                            Classificação: Rifle de assalto <br>
+                            Local de criação: Rússia <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/255px-Flag_of_Russia.svg.png" height="14px" alt=""><br>
+                            Criador: Kalashnikov Concern<br>
+                            Fabricante: Kalashnikov Concern<br>
+                            Método de ação: Operação a gás, ferrolho rotativo<br>
+                            Modos de tiro: Semi-automático, Automático<br>
+                            Cadência: ~600 rpm (automático)<br>
+                            Munição padrão: 5,56x45mm NATO<br>
+                            Quantidade de munição: 30 tiros (pente)<br>
+                            Comprimento padrão: 880 mm<br>
+                            Comprimento do cano: 415 mm<br>
+                            Peso: 3,5 kg <br>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <time class="w-100">2019</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3 class="text-bg-dark">
+            Eduardo Winter - 2024
+        </h3>
+    </footer>
+    <script src="./BS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
